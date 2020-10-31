@@ -1,11 +1,11 @@
 package mycalculator
 
-import(
+import (
 	"bufio"
 	"fmt"
 	"os"
-	"strings"
 	"strconv"
+	"strings"
 )
 
 type calc struct{}
@@ -38,7 +38,7 @@ func parsear(entrada string) int{
 	return operador
 }
 
-func leerEntrada()string{
+func LeerEntrada()string{
 	scanner:=bufio.NewScanner(os.Stdin) //bufio.NewScanne libreria para el ingreso de datos
 	scanner.Scan()						//permite obtener el dato ingresao
 	return scanner.Text()			//leer el dato y pasarlo a la variable	
